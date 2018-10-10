@@ -8,7 +8,7 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/core/core.hpp>
 #include <QMainWindow>
-
+#include <QPixmap>
 
 
 using namespace std;
@@ -19,12 +19,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    ui->label->setPixmap("C:/users/user/documents/101.png");
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+
 }
 
 
