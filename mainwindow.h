@@ -2,15 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <opencv2/opencv.hpp>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/core.hpp>
-#include <QMainWindow>
-#include <QLabel>
 
-using namespace std;
-using namespace cv;
 namespace Ui {
 class MainWindow;
 }

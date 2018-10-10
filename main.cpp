@@ -1,12 +1,8 @@
-
 #include "mainwindow.h"
 #include <QApplication>
+
 #include <iostream>
 #include <stdio.h>
-
-
-using namespace std;
-using namespace cv;
 
 
 int main(int argc, char *argv[])

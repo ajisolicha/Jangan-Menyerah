@@ -3,7 +3,7 @@
 # Project created by QtCreator 2018-10-10T14:06:55
 #
 #-------------------------------------------------
-QT       += core gui  opengl
+QT       += core gui
 
 
 CONFIG += c++11

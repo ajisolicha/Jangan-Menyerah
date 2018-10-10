@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 #include <iostream>
 #include <stdio.h>
 #include <QVector>
@@ -19,7 +20,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->label->setPixmap("C:/users/user/documents/101.png");
+ //   ui->label->setPixmap("C:/users/user/documents/101.png");
+//    QPixmap pix ("C:/Users/User/Documents/pengolahangambar/doraemon.jpg");
+//    ui->label->setPixmap(pix);
+//    QPixmap pix1 ("C:/Users/User/Documents/pengolahangambar/doraemon.jpg");
+//    ui->label_2->setPixmap(pix1);
+
 }
 
 MainWindow::~MainWindow()
