@@ -2,10 +2,12 @@
 #include "ui_mainwindow.h"
 #include <iostream>
 #include <stdio.h>
+#include <QVector>
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/core/core.hpp>
+#include <QMainWindow>
 
 
 
@@ -42,7 +44,8 @@ void MainWindow::pengolahangambar()
        colorTable.push_back(qRgb(i,i,i));
    const unsigned char *qImageBuffer= (const unsigned char*)imgfix.data;
      QImage gambarku= QImage(qImageBuffer,imgfix.cols,imgfix.rows,imgfix.step,QImage::Format_RGB888);
+     gambarku.setColorTable (colorTable);
      // QPixmap alhamdulillah= QPixmap::fromImage(gambarku);
-   ui->label->setPixmap(QPixmap::fromImage(gambarku));
+   ui->label->setPixmap(QPixmap::fromImage(gambarku, Qt::AutoColor));
 
 }

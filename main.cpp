@@ -3,8 +3,8 @@
 #include <QApplication>
 #include <iostream>
 #include <stdio.h>
-#include <QMainWindow>
-#include <QVector>
+
+
 using namespace std;
 using namespace cv;
 
