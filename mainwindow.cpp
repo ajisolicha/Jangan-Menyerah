@@ -61,11 +61,13 @@ void MainWindow::on_pushButton_clicked()
 {
     Mat img1;
     img1= imread ("C:/users/user/documents/101.png");
+    Mat imgfix;
+    cvtColor (img1,imgfix,CV_BGR2RGB);
     QVector<QRgb> colorTable;
     for (int i=0; i<256; i++)
         colorTable.push_back(qRgb(i,i,i));
-    const unsigned char *qImageBuffer= (const unsigned char*)img1.data;
-    QImage gambarku= QImage(qImageBuffer,img1.cols,img1.rows,img1.step,QImage::Format_RGB888);
+    const unsigned char *qImageBuffer= (const unsigned char*)imgfix.data;
+    QImage gambarku= QImage(qImageBuffer,imgfix.cols,imgfix.rows,imgfix.step,QImage::Format_RGB888);
     gambarku.setColorTable (colorTable);
     ui->label->setPixmap(QPixmap::fromImage(gambarku, Qt::AutoColor));
 }
