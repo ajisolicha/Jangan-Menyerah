@@ -36,8 +36,8 @@ MainWindow::~MainWindow()
 
 
 
-void MainWindow::pengolahangambar()
-{
+//void MainWindow::pengolahangambar()
+//{
 //    Mat img1;
 //    img1= imread ("C:/users/user/documents/101.png");
 //    Mat img2;
