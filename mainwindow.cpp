@@ -61,8 +61,12 @@ void MainWindow::on_pushButton_clicked()
 {
     Mat img1;
     img1= imread ("C:/users/user/documents/101.png");
+    Mat img2;
+    img2= imread ("C:/users/user/documents/Gray_image.jpg");
+    Mat img3;
+    addWeighted(img1,0.1,img2,0.7,0,img3);
     Mat imgfix;
-    cvtColor (img1,imgfix,CV_BGR2RGB);
+    cvtColor (img3,imgfix,CV_BGR2RGB);
     QVector<QRgb> colorTable;
     for (int i=0; i<256; i++)
         colorTable.push_back(qRgb(i,i,i));
